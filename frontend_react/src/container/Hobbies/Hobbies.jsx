@@ -22,6 +22,7 @@ const Hobbies = () => {
           <ReactPlayer
             url="https://www.youtube.com/watch?v=WhVArsoNnO8"
             controls={true}
+            light={true}
             width="100%"
             height="18rem"
             loop={true}
@@ -37,8 +38,8 @@ const Hobbies = () => {
             Drumming & Percussion
           </h2>
           <p className="p-text" style={{ marginTop: 10 }}>
-            Music gives a soul to the universe, wings to the mind, flight to the
-            imagination, and life to everything.” Therefore to relax my mind and
+            I believe music gives a soul to the universe, wings to the mind, flight to the
+            imagination, and life to everything.Therefore to relax my mind and
             for new thoughts, I play the percussion instruments.
           </p>
           <button
@@ -74,7 +75,7 @@ const Hobbies = () => {
             Photography
           </h2>
           <p className="p-text" style={{ marginTop: 10 }}>
-            "Photography is the story I fail to put into words.” Therefore I
+          I believe photography is a story that fails to be put into words. Therefore I
             like to capture the beauty and the moments in nature.
           </p>
           <button
