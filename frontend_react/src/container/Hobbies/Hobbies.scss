@@ -5,6 +5,9 @@
     @media screen and (max-width: 450px) {
         padding-top: 2rem;
       }
+      @media screen and (min-width: 1900px) {
+        width: 75%;
+      }
   }
   
   .app__hobbies-container{
@@ -27,6 +30,9 @@
     img{
         width: 100%;
         height: 'auto';
+    }
+    @media screen and (min-width: 1900px) {
+      margin-right: 8rem;
     }
   }
   button {
