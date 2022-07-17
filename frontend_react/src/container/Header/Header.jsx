@@ -36,6 +36,8 @@ const Header = () => (
         <div className="tag-cmp app__flex">
           <p className="p-text" style={{ fontSize: "10px !important" }}>
             <Typewriter
+              cursorStyle={"|"}
+              cursor={true}
               words={[
                 "UI/UX Designer",
                 "Frontend Developer",
