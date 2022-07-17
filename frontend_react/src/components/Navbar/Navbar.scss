@@ -15,10 +15,12 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  cursor: pointer !important;
 
   img {
     width: 180px;
     height: 25px;
+    cursor: pointer !important;
 
     @media screen and (min-width: 2000px) {
       width: 270px;
