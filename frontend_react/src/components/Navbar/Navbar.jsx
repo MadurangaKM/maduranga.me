@@ -10,7 +10,12 @@ const Navbar = () => {
 
   return (
     <nav className="app__navbar">
-      <div className="app__navbar-logo">
+      <div className="app__navbar-logo" onClick={() => window.scrollTo({
+      top: 0, 
+      behavior: 'smooth'
+      /* you can also use 'auto' behaviour
+         in place of 'smooth' */
+    })}>
         <img src={images.logo} alt="logo" />
       </div>
       <ul className="app__navbar-links">
