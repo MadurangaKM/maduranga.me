@@ -8,6 +8,7 @@ import uiux from "../assets/uiux.png";
 import code from "../assets/code.png";
 import graphic from "../assets/graphic-designer.png";
 import cv from "../assets/cv.png";
+import photos from "../assets/photos.png";
 
 export default {
   email,
@@ -19,4 +20,5 @@ export default {
   code,
   graphic,
   cv,
+  photos,
 };

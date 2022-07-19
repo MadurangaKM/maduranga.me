@@ -1,0 +1,55 @@
+.app__hobbies {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    @media screen and (max-width: 450px) {
+        padding-top: 2rem;
+      }
+      @media screen and (min-width: 1900px) {
+        width: 75%;
+      }
+  }
+  
+  .app__hobbies-container{
+    width: 80%;
+    margin-top: 3rem;
+  
+    display: flex;
+    flex-direction: row;
+  
+    @media screen and (max-width: 900px) {
+      width: 80%;
+      flex-direction: column;
+    }
+  }
+
+  .app__hobbies-video{
+    width: 100%;
+    max-height: 18rem;
+    margin-right: 3rem;
+    img{
+        width: 100%;
+        height: 'auto';
+    }
+    @media screen and (min-width: 1900px) {
+      margin-right: 8rem;
+    }
+  }
+  button {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--secondary-color);
+    font-weight: 500;
+    color: var(--white-color) !important;
+    outline: none;
+    margin: 1rem 0rem 0 0;
+    font-family: var(--font-base);
+
+    transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    cursor: pointer;
+
+    &:hover {
+      background-color: #2430af;
+    }
+  }
