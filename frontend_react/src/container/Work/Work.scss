@@ -21,43 +21,6 @@
   }
 }
 
-.app__work-filter {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-
-  margin: 4rem 0 2rem;
-
-  .app__work-filter-item {
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    background-color: var(--dark-gray-color);
-    color: #ffff;
-    font-weight: 800;
-
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin: 0.5rem;
-
-    &:hover {
-      background-color: var(--secondary-color);
-      color: #fff;
-    }
-
-    @media screen and (min-width: 2000px) {
-      padding: 1rem 2rem;
-      border-radius: 0.85rem;
-    }
-  }
-
-  .item-active {
-    background-color: var(--secondary-color);
-    color: #fff;
-  }
-}
-
 .app__work-portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -74,7 +37,6 @@
     background-color: var(--dark-gray-color);
     color: #000;
 
-    cursor: pointer;
     transition: all 0.3s ease;
 
     &:hover {
@@ -125,6 +87,7 @@
   border-radius: 0.5rem;
   opacity: 0;
   transition: all 0.3s ease;
+  cursor: pointer;
 
   div {
     width: 50px;
