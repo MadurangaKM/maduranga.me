@@ -3,6 +3,7 @@ import email from "../assets/email.png";
 import mobile from "../assets/mobile.png";
 import profile from "../assets/profile.png";
 import circle from "../assets/circle.png";
+import circleWhite from "../assets/circle.svg";
 import logo from "../assets/logo.png";
 import uiux from "../assets/uiux.png";
 import code from "../assets/code.png";
@@ -21,4 +22,5 @@ export default {
   graphic,
   cv,
   photos,
+  circleWhite
 };
