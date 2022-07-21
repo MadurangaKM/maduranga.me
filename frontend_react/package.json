@@ -16,6 +16,7 @@
     "react-player": "^2.10.1",
     "react-scripts": "5.0.1",
     "react-simple-typewriter": "^3.0.1",
+    "react-switch": "^7.0.0",
     "react-tooltip": "^4.2.21",
     "react-youtube": "^9.0.3",
     "web-vitals": "^2.1.4"
