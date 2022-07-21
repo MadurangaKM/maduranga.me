@@ -22,7 +22,7 @@ const Hobbies = () => {
           <ReactPlayer
             url="https://www.youtube.com/watch?v=WhVArsoNnO8"
             controls={true}
-            light={true}
+            light={images.youtube}
             width="100%"
             height="18rem"
             loop={true}
