@@ -45,19 +45,35 @@ const Footer = () => {
         Contact <span>Me</span>
       </h2>
       <div className="app__footer-cards">
-        <div className="app__footer-card ">
+        <div
+          className="app__footer-card"
+          onClick={() =>
+            window.open("mailto:madurangakodithuwakku@gmail.com", "_blank")
+          }
+        >
           <img src={images.email} alt="email" />
           <a href="mailto:madurangakodithuwakku@gmail.com" className="p-text">
             madurangakodithuwakku@gmail.com
           </a>
         </div>
-        <div className="app__footer-card">
+        <div
+          className="app__footer-card"
+          onClick={() => window.open("tel:+94771646687", "_blank")}
+        >
           <img src={images.mobile} alt="phone" />
           <a href="tel:+94771646687" className="p-text">
             +94 (77) 1646687
           </a>
         </div>
-        <div className="app__footer-card">
+        <div
+          className="app__footer-card"
+          onClick={() =>
+            window.open(
+              "https://drive.google.com/file/d/1e3kJtEoflplr2MtV9vfP8H6DU4SVo_je/view?usp=sharing",
+              "_blank"
+            )
+          }
+        >
           <img src={images.cv} alt="cv" />
           <a
             href="https://drive.google.com/file/d/1e3kJtEoflplr2MtV9vfP8H6DU4SVo_je/view?usp=sharing"
