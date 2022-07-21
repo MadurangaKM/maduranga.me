@@ -10,6 +10,7 @@ import code from "../assets/code.png";
 import graphic from "../assets/graphic-designer.png";
 import cv from "../assets/cv.png";
 import photos from "../assets/photos.png";
+import youtube from "../assets/youtube.png";
 
 export default {
   email,
@@ -22,5 +23,6 @@ export default {
   graphic,
   cv,
   photos,
-  circleWhite
+  circleWhite,
+  youtube
 };
