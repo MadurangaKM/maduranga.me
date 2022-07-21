@@ -8,7 +8,7 @@ import { images } from "../../constants";
 const Hobbies = () => {
   return (
     <>
-      <h2 className="head-text">
+      <h2 className="head-text text_color">
         My <span>Hobbies</span>
       </h2>
 
@@ -34,13 +34,13 @@ const Hobbies = () => {
           whileHover={{ scale: 1.1 }}
           transition={{ duration: 0.5, type: "tween" }}
         >
-          <h2 className="bold-text" style={{ marginTop: 20 }}>
+          <h2 className="bold-text text_color" style={{ marginTop: 20 }}>
             Drumming & Percussion
           </h2>
-          <p className="p-text" style={{ marginTop: 10 }}>
-            I believe music gives a soul to the universe, wings to the mind, flight to the
-            imagination, and life to everything.Therefore to relax my mind and
-            for new thoughts, I play the percussion instruments.
+          <p className="p-text text_color" style={{ marginTop: 10 }}>
+            I believe music gives a soul to the universe, wings to the mind,
+            flight to the imagination, and life to everything.Therefore to relax
+            my mind and for new thoughts, I play the percussion instruments.
           </p>
           <button
             type="button"
@@ -71,12 +71,12 @@ const Hobbies = () => {
           whileHover={{ scale: 1.1 }}
           transition={{ duration: 0.5, type: "tween" }}
         >
-          <h2 className="bold-text" style={{ marginTop: 20 }}>
+          <h2 className="bold-text text_color" style={{ marginTop: 20 }}>
             Photography
           </h2>
-          <p className="p-text" style={{ marginTop: 10 }}>
-          I believe photography is a story that fails to be put into words. Therefore I
-            like to capture the beauty and the moments in nature.
+          <p className="p-text text_color" style={{ marginTop: 10 }}>
+            I believe photography is a story that fails to be put into words.
+            Therefore I like to capture the beauty and the moments in nature.
           </p>
           <button
             type="button"

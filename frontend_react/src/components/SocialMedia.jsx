@@ -8,10 +8,12 @@ const SocialMedia = () => (
       onClick={() =>
         window.open("https://www.linkedin.com/in/madurangadesign/", "_blank")
       }
+      className="background"
     >
       <BsLinkedin />
     </div>
     <div
+      className="background"
       onClick={() =>
         window.open(
           "https://www.youtube.com/c/MadurangaKodithuwakku/videos",
@@ -22,6 +24,7 @@ const SocialMedia = () => (
       <BsYoutube />
     </div>
     <div
+      className="background"
       onClick={() =>
         window.open("https://www.facebook.com/djmaduranga/", "_blank")
       }
