@@ -1,6 +1,6 @@
 # My Portfolio Website
 
-### [Live Site](https://https://www.maduranga.me)
+### [Live Site](https://www.maduranga.me)
 
 ![My portfolio Website](https://i.ibb.co/cwtqz9X/maduranga.png)
 
