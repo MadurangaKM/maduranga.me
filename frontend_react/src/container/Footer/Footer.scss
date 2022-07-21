@@ -73,15 +73,6 @@
     width: 100%;
   }
 }
-
-.app__footer-cards .app__footer-card:last-child {
-  background-color: var(--dark-gray-color);
-}
-
-.app__footer-cards .app__footer-card:last-child:hover {
-  box-shadow: 0 0 25px var(--hover-color);
-}
-
 .app__footer-form {
   width: 60%;
   flex-direction: column;

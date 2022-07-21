@@ -1,4 +1,18 @@
-#work {
+.light #work {
+  position: relative;
+  background: url("../../assets/bgIMG_light.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  .app__wrapper {
+    padding: 0;
+
+    .copyright {
+      display: none;
+    }
+  }
+}
+.dark #work {
   position: relative;
   background: url("../../assets/bgIMG.png");
   background-size: cover;

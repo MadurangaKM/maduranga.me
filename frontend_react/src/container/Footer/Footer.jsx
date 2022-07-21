@@ -41,32 +41,28 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="head-text">
+      <h2 className="head-text text_color">
         Contact <span>Me</span>
       </h2>
       <div className="app__footer-cards">
         <div
-          className="app__footer-card"
+          className="app__footer-card background-with-shadow"
           onClick={() =>
             window.open("mailto:madurangakodithuwakku@gmail.com", "_blank")
           }
         >
           <img src={images.email} alt="email" />
-          <a href="mailto:madurangakodithuwakku@gmail.com" className="p-text">
-            madurangakodithuwakku@gmail.com
-          </a>
+          <p className="p-text">madurangakodithuwakku@gmail.com</p>
         </div>
         <div
-          className="app__footer-card"
+          className="app__footer-card background-with-shadow"
           onClick={() => window.open("tel:+94771646687", "_blank")}
         >
           <img src={images.mobile} alt="phone" />
-          <a href="tel:+94771646687" className="p-text">
-            +94 (77) 1646687
-          </a>
+          <p className="p-text">+94 (77) 1646687</p>
         </div>
         <div
-          className="app__footer-card"
+          className="app__footer-card background-with-shadow"
           onClick={() =>
             window.open(
               "https://drive.google.com/file/d/1e3kJtEoflplr2MtV9vfP8H6DU4SVo_je/view?usp=sharing",
@@ -75,21 +71,14 @@ const Footer = () => {
           }
         >
           <img src={images.cv} alt="cv" />
-          <a
-            href="https://drive.google.com/file/d/1e3kJtEoflplr2MtV9vfP8H6DU4SVo_je/view?usp=sharing"
-            className="p-text"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Download My CV{" "}
-          </a>
+          <p className="p-text">Download My CV </p>
         </div>
       </div>
       {!isFormSubmitted ? (
         <div className="app__footer-form app__flex">
           <div className="app__flex">
             <input
-              className="p-text"
+              className="p-text background-with-shadow text_color"
               type="text"
               placeholder="Your Name"
               name="username"
@@ -99,7 +88,7 @@ const Footer = () => {
           </div>
           <div className="app__flex">
             <input
-              className="p-text"
+              className="p-text background-with-shadow text_color"
               type="email"
               placeholder="Your Email"
               name="email"
@@ -109,7 +98,7 @@ const Footer = () => {
           </div>
           <div>
             <textarea
-              className="p-text"
+              className="p-text background-with-shadow text_color"
               placeholder="Your Message"
               value={message}
               name="message"
@@ -122,7 +111,9 @@ const Footer = () => {
         </div>
       ) : (
         <div>
-          <h3 className="head-text">Thank you for getting in touch!</h3>
+          <h3 className="head-text text_color">
+            Thank you for getting in touch!
+          </h3>
         </div>
       )}
     </>

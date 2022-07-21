@@ -23,7 +23,7 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className="head-text">
+      <h2 className="head-text text_color">
         My Skills & <span>Experiences</span>
       </h2>
       <div className="app__skills-container">
@@ -36,7 +36,7 @@ const Skills = () => {
               key={skill.name}
             >
               <div
-                className="app__flex"
+                className="app__flex background-with-shadow"
                 style={{ backgroundColor: skill.bgColor }}
               >
                 <img src={urlFor(skill.icon)} alt={skill.name} />
@@ -62,7 +62,7 @@ const Skills = () => {
                       data-for={work.name}
                       key={work.name}
                     >
-                      <h4 className="bold-text">{work.name}</h4>
+                      <h4 className="bold-text text_color">{work.name}</h4>
                       <p className="p-text">{work.company}</p>
                     </motion.div>
                   </>
