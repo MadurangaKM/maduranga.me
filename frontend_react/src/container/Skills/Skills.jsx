@@ -17,7 +17,11 @@ const Skills = () => {
     });
 
     client.fetch(skillsQuery).then((data) => {
-      setSkills(data);
+      const skillsData = data.sort((a, b) => {
+        return a.number - b.number;
+      });
+      setSkills(skillsData);
+      console.log("Data here", skillsData);
     });
   }, []);
 
