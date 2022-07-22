@@ -78,7 +78,7 @@ const Footer = () => {
         <div className="app__footer-form app__flex">
           <div className="app__flex">
             <input
-              className="p-text background-with-shadow text_color"
+              className="p-text background-with-shadow text_color border"
               type="text"
               placeholder="Your Name"
               name="username"
@@ -88,7 +88,7 @@ const Footer = () => {
           </div>
           <div className="app__flex">
             <input
-              className="p-text background-with-shadow text_color"
+              className="p-text background-with-shadow text_color border"
               type="email"
               placeholder="Your Email"
               name="email"
@@ -98,7 +98,7 @@ const Footer = () => {
           </div>
           <div>
             <textarea
-              className="p-text background-with-shadow text_color"
+              className="p-text background-with-shadow text_color border"
               placeholder="Your Message"
               value={message}
               name="message"

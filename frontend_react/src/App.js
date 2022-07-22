@@ -6,9 +6,12 @@ import "./App.scss";
 import { images } from "./constants";
 
 const App = () => {
-  const [mode, setMode] = useState("dark");
+  const [mode, setMode] = useState(
+    localStorage.getItem("mode") == null ? "dark" : localStorage.getItem("mode")
+  );
   const handleChangeMode = () => {
     setMode(mode === "dark" ? "light" : "dark");
+    localStorage.setItem("mode", mode === "dark" ? "light" : "dark");
   };
   return (
     <div className={mode}>
