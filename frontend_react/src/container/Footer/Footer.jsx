@@ -52,14 +52,14 @@ const Footer = () => {
           }
         >
           <img src={images.email} alt="email" />
-          <p className="p-text">madurangakodithuwakku@gmail.com</p>
+          <p className="p-text text_color_gray">madurangakodithuwakku@gmail.com</p>
         </div>
         <div
           className="app__footer-card background-with-shadow"
           onClick={() => window.open("tel:+94771646687", "_blank")}
         >
           <img src={images.mobile} alt="phone" />
-          <p className="p-text">+94 (77) 1646687</p>
+          <p className="p-text text_color_gray">+94 (77) 1646687</p>
         </div>
         <div
           className="app__footer-card background-with-shadow"
@@ -71,7 +71,7 @@ const Footer = () => {
           }
         >
           <img src={images.cv} alt="cv" />
-          <p className="p-text">Download My CV </p>
+          <p className="p-text text_color_gray">Download My CV </p>
         </div>
       </div>
       {!isFormSubmitted ? (
