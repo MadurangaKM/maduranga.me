@@ -31,12 +31,12 @@ const Header = (props) => {
               👋
             </span>
             <div style={{ marginLeft: 20 }}>
-              <p className="p-text">Hello, I am</p>
+              <p className="p-text text_color_gray">Hello, I am</p>
               <h1 className="head-text text_color">Maduranga</h1>
             </div>
           </div>
           <div className="tag-cmp app__flex background">
-            <p className="p-text" style={{ fontSize: "10px !important" }}>
+            <p className="p-text text_color_gray" style={{ fontSize: "10px !important" }}>
               <Typewriter
                 cursorStyle={"|"}
                 cursor={true}
