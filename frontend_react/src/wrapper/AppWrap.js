@@ -10,7 +10,7 @@ const AppWrap = (Component, idName, classNames) =>
           <Component {...props} />
 
           <div className="copyright">
-            <p className="p-text text_color_light">@2022 maduranga.me</p>
+            <p className="p-text text_color_light">@{new Date().getFullYear()} maduranga.me</p>
             <p className="p-text text_color_light">All rights reserved</p>
           </div>
         </div>

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import "./About.scss";
 import { urlFor, client } from "../../client";
-
+import { Helmet } from "react-helmet";
 const About = () => {
   const [abouts, setAbouts] = useState([]);
 
@@ -17,6 +17,13 @@ const About = () => {
 
   return (
     <>
+      <Helmet>
+        <title>About Me</title>
+        <meta
+          name="description"
+          content="Hi! I'm Maduranga Kodithuwakku. I started my career as a graphic designer. After being an expert in graphic designing I have expanded my path as a creative motion graphic designer. I took another step forward and became a UI/UX Designer. I have 5+ years of UX Industrial Experience in designing web and mobile applications. Again I have expanded my path to the Frontend Developer."
+        />
+      </Helmet>
       <h2 className="head-text text_color">
         About <span>Me</span>
       </h2>
@@ -34,7 +41,7 @@ const About = () => {
             <h2 className="bold-text text_color" style={{ marginTop: 20 }}>
               {about.title}
             </h2>
-            <p className="p-text text_color_gray" style={{ marginTop: 10 }} >
+            <p className="p-text text_color_gray" style={{ marginTop: 10 }}>
               {about.description}
             </p>
           </motion.div>
