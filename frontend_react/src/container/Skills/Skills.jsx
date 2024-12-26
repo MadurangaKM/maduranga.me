@@ -14,7 +14,10 @@ const Skills = () => {
     const skillsQuery = '*[_type == "skills"]';
 
     client.fetch(query).then((data) => {
-      setExperiences(data);
+      const experinceData = data.sort((a, b) => {
+        return a.number - b.number;
+      });
+      setExperiences(experinceData);
     });
 
     client.fetch(skillsQuery).then((data) => {
@@ -25,7 +28,6 @@ const Skills = () => {
       console.log("Data here", skillsData);
     });
   }, []);
-
   return (
     <>
       <Helmet>
