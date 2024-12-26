@@ -4,7 +4,7 @@ import { images } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { client } from "../../client";
 import "./Footer.scss";
-
+import { Helmet } from "react-helmet";
 const Footer = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -41,6 +41,13 @@ const Footer = () => {
 
   return (
     <>
+      <Helmet>
+        <title>maduranga.me</title>
+        <meta
+          name="description"
+          content=" Hi! I'm Maduranga Kodithuwakku. A Lead UI/UX Engineer based in Colombo, Sri Lanka. 5+ years of UX Industrial Experience, Crafting Digital Products, Web/Mobile Applications. I have worked with a couple of Enterprises, and UX Companies in Sri Lanka and also worldwide. I design for a user-centered focus. I'm a simple, yet efficient person, a hard worker, and really interested in art."
+        />
+      </Helmet>
       <h2 className="head-text text_color">
         Contact <span>Me</span>
       </h2>
@@ -52,7 +59,9 @@ const Footer = () => {
           }
         >
           <img src={images.email} alt="email" />
-          <p className="p-text text_color_gray">madurangakodithuwakku@gmail.com</p>
+          <p className="p-text text_color_gray">
+            madurangakodithuwakku@gmail.com
+          </p>
         </div>
         <div
           className="app__footer-card background-with-shadow"

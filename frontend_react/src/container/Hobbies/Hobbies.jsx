@@ -4,10 +4,18 @@ import { AppWrap, MotionWrap } from "../../wrapper";
 import ReactPlayer from "react-player/youtube";
 import "./Hobbies.scss";
 import { images } from "../../constants";
+import { Helmet } from "react-helmet";
 
 const Hobbies = () => {
   return (
     <>
+      <Helmet>
+        <title>My Hobbies</title>
+        <meta
+          name="description"
+          content="Hi! I'm Maduranga Kodithuwakku. My Hobbies are Drumming & Percussion, Photography"
+        />
+      </Helmet>
       <h2 className="head-text text_color">
         My <span>Hobbies</span>
       </h2>

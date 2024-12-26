@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 import "./Skills.scss";
+import { Helmet } from "react-helmet";
 
 const Skills = () => {
   const [experiences, setExperiences] = useState([]);
@@ -27,6 +28,13 @@ const Skills = () => {
 
   return (
     <>
+      <Helmet>
+        <title>My Skills & Experiences</title>
+        <meta
+          name="description"
+          content="Hi! I'm Maduranga Kodithuwakku. Graphic Designer, Freelance UI/UX Designer, UI/UX Engineer, Senior UI/UX Engineer, Associate Lead UI/UX"
+        />
+      </Helmet>
       <h2 className="head-text text_color">
         My Skills & <span>Experiences</span>
       </h2>
