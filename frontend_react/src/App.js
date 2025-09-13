@@ -25,7 +25,7 @@ const App = () => {
           />
         </Helmet>
         <Navbar onChange={handleChangeMode} mode={mode} />
-        <Header circle={mode === "dark" ? images.circle : images.circleWhite} />
+        <Header mode={mode} />
         <About />
         <Work />
         <Skills />
