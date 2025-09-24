@@ -155,6 +155,7 @@ const Work = (props) => {
         ))}
         <Modal
           open={open}
+          blockScroll={false}
           onClose={onCloseModal}
           center
           styles={{
