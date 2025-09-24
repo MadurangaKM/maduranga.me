@@ -27,7 +27,7 @@ const App = () => {
         <Navbar onChange={handleChangeMode} mode={mode} />
         <Header mode={mode} />
         <About />
-        <Work />
+        <Work mode={mode}  />
         <Skills />
         <Hobbies />
         <Footer />

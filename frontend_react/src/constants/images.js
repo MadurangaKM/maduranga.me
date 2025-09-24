@@ -12,6 +12,8 @@ import graphic from "../assets/graphic-designer.png";
 import cv from "../assets/cv.png";
 import photos from "../assets/photos.png";
 import youtube from "../assets/youtube.png";
+import logoDesign from "../assets/logo-design.png";
+import UIUX from "../assets/UIUX-design.png";
 
 export default {
   email,
@@ -26,5 +28,7 @@ export default {
   cv,
   photos,
   circleWhite,
-  youtube
+  youtube,
+  logoDesign,
+  UIUX,
 };
