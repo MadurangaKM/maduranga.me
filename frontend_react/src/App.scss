@@ -25,7 +25,7 @@
     background-repeat: repeat;
     position: relative;
   }
-  .border{
+  .border {
     border: 0.8px solid rgb(57, 57, 57);
   }
 }
@@ -228,7 +228,28 @@
     }
   }
 }
+.whatsapp-float {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  bottom: 30px; // distance from bottom
+  right: 50px; // distance from right
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: transform 0.3s ease;
 
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
 @media screen and (max-width: 500px) {
   .app__navigation,
   .app__social {

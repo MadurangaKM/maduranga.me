@@ -14,6 +14,7 @@ import photos from "../assets/photos.png";
 import youtube from "../assets/youtube.png";
 import logoDesign from "../assets/logo-design.png";
 import UIUX from "../assets/UIUX-design.png";
+import Whatsapp from "../assets/whatsapp.gif";
 
 export default {
   email,
@@ -31,4 +32,5 @@ export default {
   youtube,
   logoDesign,
   UIUX,
+  Whatsapp
 };
