@@ -9,6 +9,7 @@ import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
 import { images } from "../../constants";
 import { AsyncImage } from "loadable-image";
+import Loading from "../../components/Loading";
 const Work = (props) => {
   const [filterWork, setFilterWork] = useState([]);
   // eslint-disable-next-line no-unused-vars
@@ -205,7 +206,18 @@ const Work = (props) => {
                         aspectRatio: img.width + "/" + img.height,
                         objectFit: "contain",
                       }}
-                      loader={<div style={{ background: "#888" }} />}
+                      loader={
+                        <div
+                          style={{
+                            background: "#888",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                          }}
+                        >
+                          <Loading />
+                        </div>
+                      }
                     />
                   ))
                 : uxData.map((img) => (
@@ -218,7 +230,18 @@ const Work = (props) => {
                         aspectRatio: img.width + "/" + img.height,
                         objectFit: "contain",
                       }}
-                      loader={<div style={{ background: "#888" }} />}
+                     loader={
+                        <div
+                          style={{
+                            background: "#888",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                          }}
+                        >
+                          <Loading />
+                        </div>
+                      }
                     />
                   ))}
             </div>
