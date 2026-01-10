@@ -34,6 +34,44 @@
     padding-top: 6rem;
   }
 }
+.react-responsive-modal-modal {
+  height: 90vh;
+  font-family: "poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.modal-header {
+  position: sticky; /* keeps it visible on scroll */
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff; /* match modal background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 16px;
+  border-bottom: 1px solid #ddd;
+  z-index: 10;
+  height: 60px;
+  margin-bottom: 16px;
+}
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.modal-body {
+  padding-left: 16px;
+  padding-right: 16px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
 
 .app__work-portfolio {
   display: flex;
@@ -44,7 +82,6 @@
   .app__work-item {
     width: 270px;
     flex-direction: column;
-
     margin: 2rem;
     padding: 1rem;
     border-radius: 0.5rem;

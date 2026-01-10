@@ -14,9 +14,23 @@ const App = () => {
     setMode(mode === "dark" ? "light" : "dark");
     localStorage.setItem("mode", mode === "dark" ? "light" : "dark");
   };
+  const phoneNumber = "94771646687";
+  const message = "Hello, I’d like to know more about your services.";
+
   return (
     <div className={mode}>
       <div className="app">
+        <a
+          href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+            message
+          )}`}
+          className="whatsapp-float"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Chat on WhatsApp"
+        >
+          <img src={images.Whatsapp} alt="WhatsApp" />
+        </a>
         <Helmet>
           <title>maduranga.me</title>
           <meta
@@ -25,9 +39,9 @@ const App = () => {
           />
         </Helmet>
         <Navbar onChange={handleChangeMode} mode={mode} />
-        <Header circle={mode === "dark" ? images.circle : images.circleWhite} />
+        <Header mode={mode} />
         <About />
-        <Work />
+        <Work mode={mode} />
         <Skills />
         <Hobbies />
         <Footer />

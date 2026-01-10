@@ -21,16 +21,9 @@
   margin: 2rem;
 
   img {
-    width: 100%;
-    height: 170px;
+    width: 70%;
     border-radius: 15px;
     object-fit: cover;
-    animation: mymove 5s infinite;
-  }
-  @keyframes mymove {
-    50% {
-      box-shadow: 2px 2px 30px #8001ffac;
-    }
   }
 
   @media screen and (min-width: 2000px) {

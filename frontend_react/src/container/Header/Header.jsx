@@ -68,11 +68,11 @@ const Header = (props) => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__header-img"
       >
-        <img src={images.profile} alt="profile_bg" />
+        <img src={props.mode === "dark" ? images.profileDark : images.profileLight} alt="maduranga kodithuwakku" />
         <motion.img
           whileInView={{ scale: [0, 1] }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          src={props.circle}
+          src={props.mode === "dark" ? images.circle : images.circleWhite}
           alt="profile_circle"
           className="overlay_circle"
         />
